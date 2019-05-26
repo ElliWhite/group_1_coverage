@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root=".." name="0">
+      <df name="include">
+        <df name="quadcopter_ctrl">
+          <df name="astar">
+            <in>Astar.h</in>
+            <in>MapSearchNode.h</in>
+            <in>fsa.h</in>
+            <in>stlastar.h</in>
+          </df>
+          <in>BoostGraphWrapper.h</in>
+          <in>CoverAnalysis.h</in>
+          <in>FloydWarshall.h</in>
+          <in>GraphAlgs.h</in>
+          <in>LRTAstar.h</in>
+          <in>Log.h</in>
+          <in>LogColors.h</in>
+          <in>NodeCounting.h</in>
+          <in>PathPlanningAlg.h</in>
+          <in>PathPlanningAlgModified.h</in>
+          <in>PathPlanningAlgNew.h</in>
+          <in>PatrolGRAPH.h</in>
+          <in>Utils.h</in>
+          <in>VrpGreedyAstar.h</in>
+          <in>VrpGreedyFW.h</in>
+          <in>VrpGreedyFW2.h</in>
+          <in>graphStructs.h</in>
+          <in>kernelNode.h</in>
+          <in>quadcopterRosCtrl.h</in>
+          <in>termColors.h</in>
+        </df>
+        <df name="vrep_common">
+          <in>simRosStartSimulation.h</in>
+          <in>simRosStopSimulation.h</in>
+        </df>
+      </df>
+      <df name="Input">
+        <df name="Grids">
+        </df>
+      </df>
+      <df name="launch">
+      </df>
+      <df name="msg">
+      </df>
+      <df name="quadcopter_ctrl">
+      </df>
+      <df name="rviz">
+      </df>
+      <df name="scripts">
+      </df>
+      <df name="src">
+        <in>BoostGraphWrapper.cpp</in>
+        <in>CoverAnalysis.cpp</in>
+        <in>FloydWarshall.cpp</in>
+        <in>GraphAlgs.cpp</in>
+        <in>LRTAstar.cpp</in>
+        <in>Log.cpp</in>
+        <in>NodeCounting.cpp</in>
+        <in>OnlineSearchListener.cpp</in>
+        <in>PathPlanningAlg.cpp</in>
+        <in>PathPlanningAlgModified.cpp</in>
+        <in>PathPlanningAlgNew.cpp</in>
+        <in>PatrolGRAPH.cpp</in>
+        <in>Utils.cpp</in>
+        <in>VrpGreedyAstar.cpp</in>
+        <in>VrpGreedyFW.cpp</in>
+        <in>VrpGreedyFW2.cpp</in>
+        <in>graphAlgsTest.cpp</in>
+        <in>kernelNode.cpp</in>
+        <in>newfile.cpp</in>
+        <in>quadLRTA.cpp</in>
+        <in>quadLRTAHelpRequest.cpp</in>
+        <in>quadLRTAModified.cpp</in>
+        <in>quadLRTANew.cpp</in>
+        <in>quadNodeCount.cpp</in>
+        <in>quadPatrolGRAPH.cpp</in>
+        <in>quadcopterRosCtrl.cpp</in>
+        <in>testVRPs.cpp</in>
+      </df>
+      <df name="vrep_scenes">
+      </df>
+    </df>
+  </logicalFolder>
+  <projectmakefile>../Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <developmentServer>localhost</developmentServer>
+        <platform>2</platform>
+      </toolsSet>
+      <compile>
+        <compiledirpicklist>
+          <compiledirpicklistitem>.</compiledirpicklistitem>
+          <compiledirpicklistitem>${AUTO_FOLDER}</compiledirpicklistitem>
+        </compiledirpicklist>
+        <compiledir>${AUTO_FOLDER}</compiledir>
+        <compilecommandpicklist>
+          <compilecommandpicklistitem>${MAKE} ${ITEM_NAME}.o</compilecommandpicklistitem>
+          <compilecommandpicklistitem>${AUTO_COMPILE}</compilecommandpicklistitem>
+        </compilecommandpicklist>
+        <compilecommand>${AUTO_COMPILE}</compilecommand>
+      </compile>
+      <dbx_gdbdebugger version="1">
+        <gdb_pathmaps>
+        </gdb_pathmaps>
+        <gdb_interceptlist>
+          <gdbinterceptoptions gdb_all="false" gdb_unhandled="true" gdb_unexpected="true"/>
+        </gdb_interceptlist>
+        <gdb_options>
+          <DebugOptions>
+          </DebugOptions>
+        </gdb_options>
+        <gdb_buildfirst gdb_buildfirst_overriden="false" gdb_buildfirst_old="false"/>
+      </dbx_gdbdebugger>
+      <nativedebugger version="1">
+        <engine>gdb</engine>
+      </nativedebugger>
+      <runprofile version="9">
+        <runcommandpicklist>
+          <runcommandpicklistitem>"${OUTPUT_PATH}"</runcommandpicklistitem>
+        </runcommandpicklist>
+        <runcommand>"${OUTPUT_PATH}"</runcommand>
+        <rundir>../../..</rundir>
+        <buildfirst>false</buildfirst>
+        <terminal-type>0</terminal-type>
+        <remove-instrumentation>0</remove-instrumentation>
+        <environment>
+        </environment>
+      </runprofile>
+    </conf>
+  </confs>
+</configurationDescriptor>

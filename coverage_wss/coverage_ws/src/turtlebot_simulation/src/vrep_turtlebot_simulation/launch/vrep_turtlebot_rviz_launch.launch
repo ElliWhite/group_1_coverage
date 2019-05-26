@@ -1,0 +1,11 @@
+<launch>
+
+	<arg name="robot_prefix" default="turtlebot1"/>
+	<arg name="robot_prefix_2" default="turtlebot2"/>
+  
+	<param name="robot_description_$(arg robot_prefix)" command="$(find xacro)/xacro --inorder '$(find turtlebot_description)/robots/kobuki_hexagons_kinect.urdf.xacro'"/>
+	<param name="robot_description_$(arg robot_prefix_2)" command="$(find xacro)/xacro --inorder '$(find turtlebot_description)/robots/kobuki_hexagons_kinect.urdf.xacro'"/>
+  
+	<node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtlebot_rviz_launchers)/rviz/model.rviz" />
+
+</launch>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<launch>
+	<arg name="respawn_value" default="false" /> 
+	<!-- normals computation -->
+	<node name="compute_normals" pkg="path_planner" 
+	type="compute_normals" respawn="$(arg respawn_value)" output="screen">
+		<rosparam file="$(find turtlebot_launchers)/config/traversability/path_planner_octomap.yaml" /> 
+	     <param name = "robot_frame_name" value = "/base_footprint"/>
+		 <param name = "laser_frame_name" value = "/kinect_depth"/>
+		<!-- Output -->
+		<remap from = "cloud_in" to = "/octomap"/>
+		    
+	    <!-- Output -->
+		<remap from = "cloud_out" to = "/local_map_normals"/>
+		<remap from = "/normals_marker" to = "/normal_markers"/>
+	</node> 
+</launch>
+

@@ -1,0 +1,35 @@
+<launch>
+
+  <arg name="num" default="1" />
+  <arg name="num_quad" default="0" />
+  <arg name="input" default="map4.txt" />
+  <arg name="zHeight" default="5.0" />
+  <arg name="ctrl_mode" default="asctec" />
+  <arg name="start_node" default="0" />
+  <arg name="minVis" default="2" />
+
+
+<!--  <node name="OSListener" pkg="quadcopter_ctrl" type="OnlineSearchListener" args="3" output="screen"/> -->
+<!--  <node name="quadLRTAstar_0" pkg="quadcopter_ctrl" type="quadLRTA" args="$(arg num_quad) $(arg input) $(arg zHeight)  $(arg ctrl_mode) $(arg start_node) $(arg minVis)" output="screen"/> -->
+  <node name="kernel_node" pkg="quadcopter_ctrl" type="kernelNode" args="$(arg input) $(arg num)" output="screen"/>
+  <node name="quadcopterRosCtrl_0" pkg="quadcopter_ctrl" type="quadcopterRosCtrl" args="$(arg num_quad) $(arg zHeight) $(arg ctrl_mode)" output="screen"/>
+</launch>
+
+<!--
+README! For the quadNodeCount node this are the required input parameters:
+"argv[1]: Quadcopter # to control"
+"argv[2]: Input file"
+"argv[3]: zHeight of flight"
+"argv[4]: Control Mode ('sim' or 'asctec')"
+"argv[5]: STARTNODE, index of first node"
+"argv[6]: min visits (1="simple coverage")
+
+README! For the kernelNode node this are the required input parameters:
+"argv[1]: Input Map"
+"argv[2]: Number of quadcopters"
+
+README! For the quadcopterRosCtrl node this are the required input parameters:
+"argv[1]: Quadcopter # to control"
+"argv[2]: zHeight of flight"
+"argv[3]: Control Mode ('sim' or 'asctec')"
+-->

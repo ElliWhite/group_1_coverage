@@ -1,0 +1,41 @@
+<launch>
+
+	<arg name="robot_name1" value="turtlebot1" />
+	<arg name="robot_name2" value="turtlebot2" />
+	<arg name="sim" 		value="vrep"/>
+
+	<include file="$(find vrep_turtlebot_simulation)/launch/vrep_turtlebot_rviz_launch.launch"/>
+
+	<node pkg="turtlebot_teleop_keyboard" type="turtlebot_teleop_key_diff_drive_mux" name="turtlebot_teleop_key_diff_drive_mux_1" output="screen">
+		<remap from="/wheels_vel_cmd" to="$(arg sim)/$(arg robot_name1)/wheels_vel_cmd"/>
+	</node>
+
+	<node pkg="turtlebot_teleop_keyboard" type="turtlebot_teleop_key_diff_drive_mux" name="turtlebot_teleop_key_diff_drive_mux_2" output="screen">
+		<remap from="/wheels_vel_cmd" to="$(arg sim)/$(arg robot_name2)/wheels_vel_cmd"/>
+	</node>
+
+
+	<node pkg="rgb_pcd_kinect_fusion_t1" type="rgb_pcd_kinect_fusion_t1" name="rgb_pcd_kinect_fusion_t1" respawn="false" output="screen"/>
+	<node pkg="rgb_pcd_kinect_fusion_t2" type="rgb_pcd_kinect_fusion_t2" name="rgb_pcd_kinect_fusion_t2" respawn="false" output="screen"/>
+
+
+	<include file="$(find turtlebot_launchers)/launch/turtlebot_octomap_mapping_mux.launch">
+		<arg name="robot_name1" value="$(arg robot_name1)" />
+		<arg name="robot_name2" value="$(arg robot_name2)" />
+	</include>
+
+
+	<include file="$(find turtlebot_launchers)/launch/turtlebot_normal_estimation.launch">
+	</include>
+
+
+	<include file="$(find turtlebot_launchers)/launch/turtlebot_traversability_analysis.launch">
+	</include>
+
+
+	<include file="$(find turtlebot_launchers)/launch/turtlebot_path_planner_mux.launch">
+		<arg name="robot_name1" value="$(arg robot_name1)" />
+		<arg name="robot_name2" value="$(arg robot_name2)" />
+	</include>
+
+</launch>

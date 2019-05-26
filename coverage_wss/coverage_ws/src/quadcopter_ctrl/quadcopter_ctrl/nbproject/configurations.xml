@@ -1,0 +1,651 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<configurationDescriptor version="97">
+  <logicalFolder name="root" displayName="root" projectFiles="true" kind="ROOT">
+    <df root=".." name="0">
+      <df name="src">
+        <in>BoostGraphWrapper.cpp</in>
+        <in>CoverAnalysis.cpp</in>
+        <in>FloydWarshall.cpp</in>
+        <in>GraphAlgs.cpp</in>
+        <in>LRTAstar.cpp</in>
+        <in>Log.cpp</in>
+        <in>NodeCounting.cpp</in>
+        <in>OnlineSearchListener.cpp</in>
+        <in>PathPlanningAlg.cpp</in>
+        <in>PathPlanningAlgModified.cpp</in>
+        <in>PathPlanningAlgNew.cpp</in>
+        <in>PatrolGRAPH.cpp</in>
+        <in>Utils.cpp</in>
+        <in>VrpGreedyAstar.cpp</in>
+        <in>VrpGreedyFW.cpp</in>
+        <in>VrpGreedyFW2.cpp</in>
+        <in>graphAlgsTest.cpp</in>
+        <in>kernelNode.cpp</in>
+        <in>newfile.cpp</in>
+        <in>quadLRTA.cpp</in>
+        <in>quadLRTAHelpRequest.cpp</in>
+        <in>quadLRTAModified.cpp</in>
+        <in>quadLRTANew.cpp</in>
+        <in>quadNodeCount.cpp</in>
+        <in>quadPatrolGRAPH.cpp</in>
+        <in>quadcopterRosCtrl.cpp</in>
+        <in>testVRPs.cpp</in>
+      </df>
+    </df>
+    <logicalFolder name="src"
+                   displayName="src"
+                   projectFiles="true"
+                   root="../../vrep_plugin/src">
+      <itemPath>../../vrep_plugin/src/ROS_server.cpp</itemPath>
+      <itemPath>../../vrep_plugin/src/luaFunctionData.cpp</itemPath>
+      <itemPath>../../vrep_plugin/src/luaFunctionDataItem.cpp</itemPath>
+      <itemPath>../../vrep_plugin/src/v_repLib.cpp</itemPath>
+      <itemPath>../../vrep_plugin/src/vrepSubscriber.cpp</itemPath>
+      <itemPath>../../vrep_plugin/src/vrep_plugin.cpp</itemPath>
+    </logicalFolder>
+    <logicalFolder name="ExternalFiles"
+                   displayName="Important Files"
+                   projectFiles="false"
+                   kind="IMPORTANT_FILES_FOLDER">
+      <itemPath>../Makefile</itemPath>
+      <itemPath>nbproject/private/launcher.properties</itemPath>
+    </logicalFolder>
+  </logicalFolder>
+  <sourceFolderFilter>^(nbproject)$</sourceFolderFilter>
+  <sourceRootList>
+    <Elem>..</Elem>
+  </sourceRootList>
+  <projectmakefile>../Makefile</projectmakefile>
+  <confs>
+    <conf name="Default" type="0">
+      <toolsSet>
+        <compilerSet>default</compilerSet>
+        <dependencyChecking>false</dependencyChecking>
+        <rebuildPropChanged>false</rebuildPropChanged>
+      </toolsSet>
+      <flagsDictionary>
+        <element flagsID="0" commonFlags="-fPIC"/>
+      </flagsDictionary>
+      <codeAssistance>
+      </codeAssistance>
+      <makefileType>
+        <makeTool>
+          <buildCommandWorkingDir>../../../</buildCommandWorkingDir>
+          <buildCommand>sh -c ". /opt/ros/indigo/setup.sh; catkin_make"</buildCommand>
+          <cleanCommand>/opt/ros/indigo/bin/catkin_make clean</cleanCommand>
+          <executablePath></executablePath>
+        </makeTool>
+        <preBuild>
+          <preBuildCommandWorkingDir>.</preBuildCommandWorkingDir>
+          <preBuildCommand></preBuildCommand>
+        </preBuild>
+      </makefileType>
+      <item path="../../vrep_plugin/src/ROS_server.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../../vrep_plugin/src/luaFunctionData.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../../vrep_plugin/src/luaFunctionDataItem.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../../vrep_plugin/src/v_repLib.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../../vrep_plugin/src/vrepSubscriber.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../../vrep_plugin/src/vrep_plugin.cpp"
+            ex="false"
+            tool="1"
+            flavor2="0">
+        <ccTool flags="0">
+        </ccTool>
+      </item>
+      <item path="../src/BoostGraphWrapper.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>BoostGraphWrapper_EXPORTS</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/CoverAnalysis.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>CoverAnalysis_EXPORTS</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/FloydWarshall.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>FloydWarshall_EXPORTS</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/GraphAlgs.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>GraphAlgs_EXPORTS</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/LRTAstar.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>LRTAstar_EXPORTS</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/Log.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+            <Elem>Utils_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/NodeCounting.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>NodeCounting_EXPORTS</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/OnlineSearchListener.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/PathPlanningAlg.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>PathPlanningAlg_EXPORTS</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/PathPlanningAlgModified.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>PathPlanningAlgModified_EXPORTS</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/PathPlanningAlgNew.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>PathPlanningAlgNew_EXPORTS</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/PatrolGRAPH.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>PatrolGRAPH_EXPORTS</Elem>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/Utils.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+            <Elem>Utils_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/VrpGreedyAstar.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+            <Elem>VrpGreedyAstar_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/VrpGreedyFW.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+            <Elem>VrpGreedyFW_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/VrpGreedyFW2.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool flags="0">
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+            <Elem>VrpGreedyFW2_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/graphAlgsTest.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/kernelNode.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/newfile.cpp" ex="false" tool="1" flavor2="4">
+      </item>
+      <item path="../src/quadLRTA.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/quadLRTAHelpRequest.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/quadLRTAModified.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/quadLRTANew.cpp" ex="false" tool="1" flavor2="0">
+        <ccTool>
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/quadNodeCount.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/quadPatrolGRAPH.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/quadcopterRosCtrl.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <item path="../src/testVRPs.cpp" ex="false" tool="1" flavor2="4">
+        <ccTool>
+          <incDir>
+            <pElem>../../../devel/include</pElem>
+            <pElem>../include/quadcopter_ctrl</pElem>
+            <pElem>../include/quadcopter_ctrl/astar</pElem>
+            <pElem>../include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../../uv_ws/devel/include</pElem>
+            <pElem>../../../../../../../tradr_wss/tradr_msgs/devel/include</pElem>
+            <pElem>../../../build/quadcopter_ctrl</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="quadcopter_ctrl"</Elem>
+          </preprocessorList>
+        </ccTool>
+      </item>
+      <folder path="src">
+        <ccTool>
+          <incDir>
+            <pElem>../../vrep_plugin/include</pElem>
+            <pElem>../../../devel/include</pElem>
+            <pElem>/opt/ros/indigo/include</pElem>
+            <pElem>../../../build/vrep_plugin</pElem>
+          </incDir>
+          <preprocessorList>
+            <Elem>ROSCONSOLE_BACKEND_LOG4CXX</Elem>
+            <Elem>ROS_BUILD_SHARED_LIBS=1</Elem>
+            <Elem>ROS_PACKAGE_NAME="vrep_plugin"</Elem>
+            <Elem>v_repExtRos_EXPORTS</Elem>
+          </preprocessorList>
+        </ccTool>
+      </folder>
+    </conf>
+  </confs>
+</configurationDescriptor>

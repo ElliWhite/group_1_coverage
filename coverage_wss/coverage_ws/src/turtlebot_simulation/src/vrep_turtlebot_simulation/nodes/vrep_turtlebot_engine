@@ -1,0 +1,11 @@
+#!/bin/bash
+# see this link for other options 
+# http://www.coppeliarobotics.com/helpFiles/en/commandLine.htm
+
+cd $VREP_ROOT
+ARGS=""
+if [[ $2 -gt 0 ]]; then
+    ARGS="-h -s -q"
+fi
+./vrep.sh $ARGS -g"$3" "$1"
+

@@ -1,0 +1,10 @@
+# Define the goal
+geometry_msgs/PoseStamped target_pose
+---
+# Define the result
+bool done
+---
+# Define a feedback message
+nifti_robot_driver_msgs/Tracks tracks_cmd
+geometry_msgs/Vector3 distance_error
+

@@ -1,0 +1,92 @@
+<launch>
+		
+		<arg name="scene" default="$(find vrep_turtlebot_simulation)/scene/turtlebot_maze.ttt" />
+		<arg name="headless" default="0" />
+	    <arg name="hid" default="1" />
+		<arg name="robot_name_1" value="turtlebot1" />
+		<arg name="robot_name_2" value="turtlebot2" />
+		<arg name="simulator" value="vrep" />
+  		
+		
+		<arg name="num" default="2" />
+  		<arg name="num_ugv1" default="0" />
+  		<arg name="num_ugv2" default="1" />
+  		<arg name="input" default="map_cw.txt" />
+  		
+  		<arg name="zHeight_ugv1" default="0.0" />
+  		<arg name="zHeight_ugv2" default="0.0" />
+  		
+  		<arg name="ctrl_mode" default="sim" />
+  		
+  		<arg name="start_node_ugv1" default="378" />
+  		<arg name="start_node_ugv2" default="5" />
+  		
+  		<arg name="minVis" default="1" />
+
+  		<arg name="respawn_value" default="false" /> <!-- boolean: true, false -->
+  
+
+		<param name="robot_description_$(arg robot_name_1)" command="$(find xacro)/xacro --inorder '$(find turtlebot_description)/robots/kobuki_hexagons_kinect.urdf.xacro'"/>
+
+		<param name="robot_description_$(arg robot_name_2)" command="$(find xacro)/xacro --inorder '$(find turtlebot_description)/robots/kobuki_hexagons_kinect.urdf.xacro'"/>
+
+
+		<node name="multi_robot_simulation" pkg="ms_vrep_ros_simulation" type="vrep_ros_multi_robot_simulation" args="$(arg scene) $(arg headless)" />
+
+		
+		<node name="rviz" pkg="rviz" type="rviz" args="-d $(find turtlebot_rviz_launchers)/rviz/model.rviz" />
+
+
+		<node name="OSListener" pkg="quadcopter_ctrl" type="OnlineSearchListener" args="$(arg num)" output="screen"/>
+		
+
+		<node name="quadLRTAstar_$(arg num_ugv1)" pkg="quadcopter_ctrl" type="quadLRTANew" args="$(arg num_ugv1) $(arg input) $(arg zHeight_ugv1) $(arg ctrl_mode) $(arg start_node_ugv1) $(arg minVis)" output="screen">
+			 <param name = "global_frame_id" value = "/map"/>
+			 <param name = "robot_pose" value = "/$(arg simulator)/$(arg robot_name_1)/pose"/>
+			 <param name = "target_robot_pose" value = "/$(arg simulator)/$(arg robot_name_1)/target_pose"/>
+			 <param name = "control_server_name" value = "path_following_$(arg robot_name_1)"/>
+			 <param name = "tracks_vel_cmd_topic"		value ="/$(arg simulator)/$(arg robot_name_1)/wheels_cmd_vel"/>
+			 <param name = "robot_name" value = "ugv0"/>
+		</node>
+		
+
+		<node name="quadLRTAstar_$(arg num_ugv2)" pkg="quadcopter_ctrl" type="quadLRTANew" args="$(arg num_ugv2) $(arg input) $(arg zHeight_ugv2) $(arg ctrl_mode) $(arg start_node_ugv2) $(arg minVis)" output="screen">
+			 <param name = "global_frame_id" value = "/map"/>
+			 <param name = "robot_pose" value = "/$(arg simulator)/$(arg robot_name_2)/pose"/>
+			 <param name = "target_robot_pose" value = "/$(arg simulator)/$(arg robot_name_2)/target_pose"/>
+ 			 <param name = "control_server_name" value = "path_following_$(arg robot_name_2)"/>
+			 <param name = "tracks_vel_cmd_topic"		value ="/$(arg simulator)/$(arg robot_name_2)/wheels_cmd_vel"/>
+			 <param name = "robot_name" value = "ugv1"/>
+		</node>
+
+
+		<node name="path_following_$(arg robot_name_1)" pkg="path_following" type="path_following" respawn="false" output="screen">
+		 	<param name = "global_frame_id" value = "/map"/>
+		 	<param name = "robot_frame_id" value = "/$(arg robot_name_1)/base_link"/>
+			<param name = "frequency" value = "15"/>
+		    <param name = "tracks_vel_cmd_topic" value = "/$(arg simulator)/$(arg robot_name_1)/wheels_vel_cmd"/>
+		    <param name = "robot_pose_topic" value = "/$(arg simulator)/$(arg robot_name_1)/pose"/>
+		    <param name = "distance_threshold" value = "0.1"/>
+		    <param name = "displacement" value = "0.1"/>
+		    <param name = "vel_reference" value = "1.0"/>
+		    <param name = "gain_k1" value = "0.1"/>
+		    <param name = "gain_k2" value = "0.1"/>
+		</node> 
+
+
+		<node name="path_following_$(arg robot_name_2)" pkg="path_following" type="path_following" respawn="false" output="screen">
+		 	<param name = "global_frame_id" value = "/map"/>
+		 	<param name = "robot_frame_id" value = "/$(arg robot_name_2)/base_footprint"/>
+			<param name = "frequency" value = "15"/>
+		    <param name = "tracks_vel_cmd_topic" value = "/$(arg simulator)/$(arg robot_name_2)/wheels_vel_cmd"/>
+		    <param name = "robot_pose_topic" value = "/$(arg simulator)/$(arg robot_name_2)/pose"/>
+		    <param name = "distance_threshold" value = "0.1"/>
+		    <param name = "displacement" value = "0.1"/>
+		    <param name = "vel_reference" value = "1.0"/>
+		    <param name = "gain_k1" value = "0.1"/>
+		    <param name = "gain_k2" value = "0.1"/>
+		</node> 
+	
+
+		
+</launch>

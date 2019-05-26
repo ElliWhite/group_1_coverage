@@ -1,0 +1,2 @@
+vrep_common:vrep_ugv_plugin
+-DCATKIN_DEVEL_PREFIX=/home/elliottwhite/turtlebot2_wss/vrep_ros_interface/devel -DCMAKE_INSTALL_PREFIX=/home/elliottwhite/turtlebot2_wss/vrep_ros_interface/install -G Unix Makefiles

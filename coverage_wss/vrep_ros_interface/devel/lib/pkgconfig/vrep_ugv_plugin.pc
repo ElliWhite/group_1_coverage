@@ -1,0 +1,8 @@
+prefix=/home/elliottwhite/turtlebot2_wss/vrep_ros_interface/devel
+
+Name: vrep_ugv_plugin
+Description: Description of vrep_ugv_plugin
+Version: 3.1.2
+Cflags: 
+Libs: -L/home/elliottwhite/turtlebot2_wss/vrep_ros_interface/devel/lib 
+Requires: roscpp rosconsole std_msgs sensor_msgs cv_bridge image_transport tf tf2_ros brics_actuator roslib roscpp rosconsole std_msgs sensor_msgs image_transport tf tf2_ros roslib

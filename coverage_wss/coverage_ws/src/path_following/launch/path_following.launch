@@ -1,0 +1,21 @@
+<launch>
+  <arg name="robot_name1" value="ugv2" />
+<!--  <arg name="robot_name2" value="ugv2" /> -->
+  <arg name="simulator" value="vrep" />
+
+  <node name="path_following_$(arg robot_name1)" pkg="path_following" type="path_following" respawn="false" output="screen">
+	 <param name = "global_frame_id" value = "/map"/>
+	 <param name = "robot_frame_id" value = "/$(arg robot_name1)/base_link"/>
+	 <param name = "frequency" value = "15"/>
+     <param name = "tracks_vel_cmd_topic" value = "/$(arg simulator)/$(arg robot_name1)/tracks_vel_cmd"/>
+     <param name = "robot_pose_topic" value = "/$(arg simulator)/$(arg robot_name1)/pose"/>
+     <param name = "distance_threshold" value = "0.1"/>
+     <param name = "displacement" value = "0.1"/>
+     <param name = "vel_reference" value = "1.0"/>
+     <param name = "gain_k1" value = "0.1"/>
+     <param name = "gain_k2" value = "0.1"/>
+  </node> 
+
+
+</launch>
+

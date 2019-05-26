@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8"?>	
+
+<launch>
+    
+  
+  <arg name="scene" default="$(find vrep_turtlebot_simulation)/scene/turtlebot2_empty_world.ttt" />    
+  
+  <arg name="headless" default="0" />
+ 
+  
+  <node name="vrep_turtlebot_engine" pkg="vrep_turtlebot_simulation" type="vrep_turtlebot_engine" args="$(arg scene) $(arg headless)" />
+
+  
+</launch>

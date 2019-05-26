@@ -1,0 +1,11 @@
+<launch>
+
+	<arg name="robot_name" 	default="turtlebot1"/>
+	<arg name="sim"			default="vrep"/>
+
+	<node pkg="turtlebot_teleop_keyboard" type="turtlebot_teleop_key_diff_drive_mux" name="turtlebot_teleop_key_diff_drive_mux" output="screen">
+		<remap from="/wheels_vel_cmd" to="$(arg sim)/$(arg robot_name)/wheels_vel_cmd"/>
+	</node>
+
+
+</launch>

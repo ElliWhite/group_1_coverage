@@ -1,0 +1,8 @@
+prefix=/home/elliottwhite/turtlebot2_wss/turtlebot_simulation/install
+
+Name: vrep_turtlebot_simulation
+Description: Description of vrep_turtlebot_simulation
+Version: 0.0.0
+Cflags: 
+Libs: -L/home/elliottwhite/turtlebot2_wss/turtlebot_simulation/install/lib 
+Requires: 

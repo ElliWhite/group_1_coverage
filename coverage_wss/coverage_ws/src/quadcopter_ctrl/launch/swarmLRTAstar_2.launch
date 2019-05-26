@@ -1,0 +1,40 @@
+<launch>
+
+  <arg name="num_quad" default="0" />
+  <arg name="input" default="map4.txt" />
+  <arg name="minVis" default="2" />
+  <arg name="ctrl_mode" default="sim" />
+  <arg name="start_node" default="22" />
+  <arg name="zHeight" default="0.5" />
+  <arg name="num" default="1" />
+
+  <node name="OSListener" pkg="quadcopter_ctrl" type="OnlineSearchListener" args="$(arg num)" output="screen"/>
+  <node name="quadLRTAstar_0" pkg="quadcopter_ctrl" type="quadLRTAModified" args="$(arg num_quad) $(arg input) $(arg zHeight)  $(arg ctrl_mode) $(arg start_node) $(arg minVis)" output="screen">
+			 <param name = "global_frame_id" value = "/map"/>
+			 <param name = "robot_pose" value = "/quadcopPos_0"/>
+			 <param name = "target_robot_pose" value = "/targetObjPos_0"/>
+  </node>
+  
+<!--  <node name="OSListener" pkg="quadcopter_ctrl" type="OnlineSearchListener" args="$(arg num_quad)" output="screen"/> -->
+<!--  <node name="quadLRTAstar_0" pkg="quadcopter_ctrl" type="quadLRTA" args="0 $(arg input) $(arg zHeight) $(arg ctrl_mode) $(arg start_node) $(arg minVis)" output="screen"/> -->
+<!--  <node name="quadLRTAstar_1" pkg="quadcopter_ctrl" type="quadLRTA" args="1 $(arg input) 5.75 sim 0" output="screen"/>  -->
+<!--  <node name="quadLRTAstar_2" pkg="quadcopter_ctrl" type="quadLRTA" args="2 $(arg input) 6.5 sim 0" output="screen"/> 
+  	  <node name="quadLRTAstar_3" pkg="quadcopter_ctrl" type="quadLRTA" args="3" output="screen"/>
+  	  <node name="quadLRTAstar_4" pkg="quadcopter_ctrl" type="quadLRTA" args="4" output="screen"/>
+  	  <node name="quadLRTAstar_5" pkg="quadcopter_ctrl" type="quadLRTA" args="5" output="screen"/>
+  	  <node name="quadLRTAstar_6" pkg="quadcopter_ctrl" type="quadLRTA" args="6" output="screen"/>
+  	  <node name="quadLRTAstar_7" pkg="quadcopter_ctrl" type="quadLRTA" args="7" output="screen"/>
+  	  <node name="quadLRTAstar_8" pkg="quadcopter_ctrl" type="quadLRTA" args="8" output="screen"/>
+  	  <node name="quadLRTAstar_9" pkg="quadcopter_ctrl" type="quadLRTA" args="9" output="screen"/>
+-->
+
+</launch>
+
+<!--
+README! For the quadNodeCount node this are the required input parameters:
+"argv[1]: Quadcopter # to control"
+"argv[2]: Input file"
+"argv[3]: zHeight of flight"
+"argv[4]: Control Mode ('sim' or 'asctec')"
+"argv[5]: STARTNODE, index of first node"
+-->

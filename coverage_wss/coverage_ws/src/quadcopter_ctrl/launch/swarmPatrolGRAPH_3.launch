@@ -1,0 +1,27 @@
+<launch>
+
+  <arg name="input" default="complex_scenario.txt" />
+  <arg name="minVis" default="2" />
+  <arg name="ctrl_mode" default="sim" />
+  <arg name="start_node" default="8" />
+  <arg name="opt" default="true" />
+  
+  
+  <node name="OSListener" pkg="quadcopter_ctrl" type="OnlineSearchListener" args="3" output="screen"/>
+  <node name="quadPatrolGRAPH_0" pkg="quadcopter_ctrl" type="quadPatrolGRAPH" args="0 $(arg input) 5.0  $(arg ctrl_mode) $(arg start_node) $(arg minVis) $(arg opt)" output="screen"/>
+  <node name="quadPatrolGRAPH_1" pkg="quadcopter_ctrl" type="quadPatrolGRAPH" args="1 $(arg input) 5.75 $(arg ctrl_mode) $(arg start_node) $(arg minVis) $(arg opt)" output="screen"/>
+  <node name="quadPatrolGRAPH_2" pkg="quadcopter_ctrl" type="quadPatrolGRAPH" args="2 $(arg input) 6.5  $(arg ctrl_mode) $(arg start_node) $(arg minVis) $(arg opt)" output="screen"/>
+
+
+</launch>
+
+<!--
+README! For the quadPatrolGRAPH node this are the required input parameters:
+"argv[1]: Quadcopter # to control\n"
+"argv[2]: Input file\n"
+"argv[3]: zHeight of flight\n"
+"argv[4]: Control Mode ('sim' or 'asctec')\n"
+"argv[5]: STARTNODE, index of first node%s\n"
+"argv[6]: minVisit%s\n",
+"argv[7]: optimized (0=false (EC), 1=true (PG)) ", TC_RED, TC_NONE)
+-->

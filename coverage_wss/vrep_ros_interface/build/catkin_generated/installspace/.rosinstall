@@ -1,0 +1,2 @@
+- setup-file:
+    local-name: /home/elliottwhite/turtlebot2_wss/vrep_ros_interface/install/setup.sh

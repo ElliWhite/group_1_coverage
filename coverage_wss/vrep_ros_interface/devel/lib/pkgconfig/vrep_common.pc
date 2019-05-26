@@ -1,0 +1,8 @@
+prefix=/home/elliottwhite/turtlebot2_wss/vrep_ros_interface/devel
+
+Name: vrep_common
+Description: Description of vrep_common
+Version: 3.3.0
+Cflags: -I/home/elliottwhite/turtlebot2_wss/vrep_ros_interface/devel/include
+Libs: -L/home/elliottwhite/turtlebot2_wss/vrep_ros_interface/devel/lib 
+Requires: message_runtime
