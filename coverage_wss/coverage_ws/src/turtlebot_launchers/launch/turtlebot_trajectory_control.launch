@@ -45,10 +45,13 @@ use teleop mux -->
         <param name = "imu_odom_topic" value = "$(arg robot_name)/odom"/>
 
         <param name = "tracks_vel_cmd_topic" value="$(arg simulator)/$(arg robot_name)/wheels_vel_cmd"/>
+
+
         <!-- <remap from = "/mux_cmd_vel/release" to = "/$(arg simulator)/$(arg 
 robot_name)//mux_cmd_vel/release" />-->
      <!--param name="robot_path_topic" value="/$(arg simulator)/$(arg 
 robot_name)/robot_path" /-->
+
         <remap from = "/robot_path" to = "$(arg robot_name)/robot_path"/>
         <remap from = "/robot_local_path" to = "$(arg robot_name)/robot_local_path"/>
         <!--<remap from = "/mux_cmd_vel/release" to = "/$(arg simulator)/$(arg 

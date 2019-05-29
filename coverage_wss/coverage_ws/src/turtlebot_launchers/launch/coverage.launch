@@ -18,8 +18,8 @@
   		
   		<arg name="ctrl_mode" default="sim" />
   		
-  		<arg name="start_node_ugv1" default="378" />
-  		<arg name="start_node_ugv2" default="5" />
+  		<arg name="start_node_ugv1" default="2" />
+  		<arg name="start_node_ugv2" default="378" />
   		
   		<arg name="minVis" default="1" />
 
