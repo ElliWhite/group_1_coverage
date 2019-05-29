@@ -14,40 +14,47 @@ Task 3: Implementation in V-REP and ROS of the data structures and interfaces en
 
 Alternative task for full marks: Implementation of the autonomous navigation for one turtlebot, as described in Practical 5th May 2019.
 
-## Instalation Instructions
+## Installation Instructions
 
 ### Prerequisites
 1. Running on Ubuntu 16.04
 
-2. Installed ROS Kinteic Kame
+2. Installed ROS Kinetic Kame
 
 3. Installed V-REP PRO EDU v.3.5.0
 
 ### Setup
 Download worksapce to your machine. Sugested download location: /home/
 
-Go to: ../coverage_wss/coverage_ws/
+From terminal run commands:
+'''bash
+cd coverage_wss/coverage_ws/
 
-Build using "catkin_make" command
+catkin_make
+'''
 
-Check that "build" and "devel" folders are present under "../coverage_wss/coverage_ws/" when the build is completed sucessfully.
+"build" and "devel" folders should appear when the catkin_make is completed sucesfully
 
 ## Running Instructions
 
 ### Multi-robot SLAM demo
 From terminal run commands:
   
-  > cd coverage_wss/coverage_ws/
+'''bash
+cd coverage_wss/coverage_ws/
   
-  > source devel/setup.bash
-  
-  > roslaunch turtlebot_launchers master_launch.launch
+source devel/setup.bash
+ 
+roslaunch turtlebot_launchers master_launch.launch
+'''
 
 ### Coverage demo
 From terminal run commands:
+ 
+'''bash 
+cd coverage_wss/coverage_ws/
   
-  > cd coverage_wss/coverage_ws/
+source devel/setup.bash
   
-  > source devel/setup.bash
-  
-  > roslaunch turtlebot_launchers coverage.launch
+roslaunch turtlebot_launchers coverage.launch
+'''
