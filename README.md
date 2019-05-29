@@ -29,6 +29,7 @@ Download worksapce to your machine. Sugested download location: /home/
 From terminal run commands:
 '''bash
 cd coverage_wss/coverage_ws/
+'''
 
 catkin_make
 '''
