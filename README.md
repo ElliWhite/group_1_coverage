@@ -40,21 +40,21 @@ catkin_make
 ### Multi-robot SLAM demo
 From terminal run commands:
   
-'''bash
+```bash
 cd coverage_wss/coverage_ws/
   
 source devel/setup.bash
  
 roslaunch turtlebot_launchers master_launch.launch
-'''
+```
 
 ### Coverage demo
 From terminal run commands:
  
-'''bash 
+```bash 
 cd coverage_wss/coverage_ws/
   
 source devel/setup.bash
   
 roslaunch turtlebot_launchers coverage.launch
-'''
+```
