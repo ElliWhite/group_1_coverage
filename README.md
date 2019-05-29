@@ -61,6 +61,6 @@ roslaunch turtlebot_launchers coverage.launch
 
 ## Videos
 
-[Dual Autonomous Navigation video](https://www.youtube.com/watch?v=ZRH_pJarqpo) (Simulation runns slow so it may look like it is frozen)
+[Dual Autonomous Navigation video](https://www.youtube.com/watch?v=ZRH_pJarqpo) (Simulation runs slow so it may look like it is frozen during certain intervals)
 
 [Multi-robot Coverage video](https://www.youtube.com/watch?v=m6F9Eu0oMMM)
