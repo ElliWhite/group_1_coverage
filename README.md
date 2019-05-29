@@ -37,7 +37,7 @@ catkin_make
 
 ## Running Instructions
 
-### Multi-robot SLAM demo
+### Dual Autonomous Navigation demo
 From terminal run commands:
   
 ```bash
@@ -48,7 +48,7 @@ source devel/setup.bash
 roslaunch turtlebot_launchers master_launch.launch
 ```
 
-### Coverage demo
+### Multi-robot Coverage demo
 From terminal run commands:
  
 ```bash 
@@ -58,3 +58,9 @@ source devel/setup.bash
   
 roslaunch turtlebot_launchers coverage.launch
 ```
+
+## Videos
+
+[Dual Autonomous Navigation video](https://www.youtube.com/watch?v=ZRH_pJarqpo)
+
+[Multi-robot Coverage video](https://www.youtube.com/watch?v=m6F9Eu0oMMM)
