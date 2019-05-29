@@ -27,12 +27,11 @@ Alternative task for full marks: Implementation of the autonomous navigation for
 Download worksapce to your machine. Sugested download location: /home/
 
 From terminal run commands:
-'''bash
+```bash
 cd coverage_wss/coverage_ws/
-'''
 
 catkin_make
-'''
+```
 
 "build" and "devel" folders should appear when the catkin_make is completed sucesfully
 
