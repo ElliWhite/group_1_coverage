@@ -30,14 +30,24 @@ Go to: ../coverage_wss/coverage_ws/
 
 Build using "catkin_make" command
 
+Check that "build" and "devel" folders are present under "../coverage_wss/coverage_ws/" when the build is completed sucessfully.
+
 ## Running Instructions
 
 ### Multi-robot SLAM demo
-From terminal run command source > ./devel/setup.bash
-
-From same terminal run command > roslaunch turtlebot_launchers master_launch.launch
+From terminal run commands:
+  
+  > cd coverage_wss/coverage_ws/
+  
+  > source devel/setup.bash
+  
+  > roslaunch turtlebot_launchers master_launch.launch
 
 ### Coverage demo
-From terminal run command source > ./devel/setup.bash
-
-From same terminal run command > roslaunch turtlebot_launchers coverage.launch
+From terminal run commands:
+  
+  > cd coverage_wss/coverage_ws/
+  
+  > source devel/setup.bash
+  
+  > roslaunch turtlebot_launchers coverage.launch
